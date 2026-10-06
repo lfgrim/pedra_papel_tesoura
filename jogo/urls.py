@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.boas_vindas, name='boas_vindas'),
-    path('jogar/', views.jogar, name='jogar') # ← nova rota
+    path('jogar/', views.jogar, name='jogar'), # ← nova rota
+    path("historico/", views.historico, name="historico")
 ] 
